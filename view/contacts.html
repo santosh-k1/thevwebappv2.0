@@ -14,11 +14,35 @@
 					<div class="col-md-6 col-sm-6 contact_left_grid">
 						<input type="text" name="Name" placeholder="Name" required="">
 						<input type="email" name="Email" placeholder="Email" required="">
+						<p class="input-group" id="datepicker">
+							<input type="text" class="form-control" uib-datepicker-popup ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+							<span class="input-group-btn">
+							  <button type="button" class="btn btn-default" ng-click="open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+							</span>
+						  </p>
+
+						
 					</div>
+					
 					<div class="col-md-6 col-sm-6 contact_left_grid">
 						<input type="text" name="Telephone" placeholder="Telephone" required="">
-						<input type="text" name="Subject" placeholder="Subject" required="">
+						<select>
+							<option>Query Type</option>
+						</select>
+						<select>
+							<option>No.of People</option>
+							<option>1 Person</option>
+							<option>2 People</option>
+							<option>3 People</option>
+							<option>4 People</option>
+							<option>5 People</option>
+							<option>More</option>
+						</select>
 					</div>
+
+
+
+
 					<div class="clearfix"> </div>
 					<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
 					<input type="submit" value="Submit">

@@ -1,5 +1,5 @@
-define(['angularAMD', 'angular-route','jquery','bootstrap','ui-bootstrap-tpls'], function (angularAMD) {
-    var app = angular.module("webapp", ['ngRoute','ui.bootstrap']);
+define(['angularAMD', 'angular-route','jquery','bootstrap','ui-bootstrap-tpls','angular-animate','angular-sanitize'], function (angularAMD) {
+    var app = angular.module("webapp", ['ngRoute','ui.bootstrap','ngAnimate', 'ngSanitize']);
     app.config(function ($routeProvider) {
       $routeProvider
       .when("/", angularAMD.route({

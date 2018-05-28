@@ -1,55 +1,22 @@
-	<!-- banner-text -->
-		<div class="slider">
-			<div class="callbacks_container">
-				<ul class="rslides callbacks callbacks1" id="slider4">
-					<li id="callbacks1_s0" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 1000ms ease-in-out;">
-						<div class="banner-top">
-							<div class="banner-info_agile_w3ls">
-								<h3>Come hungry. <span>Leave</span> happy.</h3>
-								<p>Small change,Big differences.</p>
-								<a href="#about" class="scroll">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-								<a href="#mail" class="scroll">Contact Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-							</div>
 
-						</div>
-					</li>
-					<li id="callbacks1_s1" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 1000ms ease-in-out;">
-						<div class="banner-top1">
-							<div class="banner-info_agile_w3ls">
-								<h3>Better Ingredients. <span> Better</span> Food.</h3>
-								<p>Small change,Big differences.</p>
-								<a href="#about" class="scroll">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-								<a href="#mail" class="scroll">Contact Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-							</div>
-
-						</div>
-					</li>
-					<li id="callbacks1_s2" class="" style="display: block; float: none; position: absolute; opacity: 0; z-index: 1; transition: opacity 1000ms ease-in-out;">
-						<div class="banner-top2">
-							<div class="banner-info_agile_w3ls">
-								<h3>Come hungry. <span>Leave</span> happy.</h3>
-								<p>Small change,Big differences.</p>
-								<a href="#about" class="scroll">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-								<a href="#mail" class="scroll">Contact Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-							</div>
-
-						</div>
-					</li>
-					<li id="callbacks1_s3" class="callbacks1_on" style="display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 1000ms ease-in-out;">
-						<div class="banner-top3">
-							<div class="banner-info_agile_w3ls">
-								<h3>Better Ingredients. <span> Better</span> Food.</h3>
-								<p>Small change,Big differences.</p>
-								<a href="#about" class="scroll">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-								<a href="#mail" class="scroll">Contact Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
-							</div>
-
-						</div>
-					</li>
-				</ul><a href="#" class="callbacks_nav callbacks1_nav prev">Previous</a><a href="#" class="callbacks_nav callbacks1_nav next">Next</a><ul class="callbacks_tabs callbacks1_tabs"><li class="callbacks1_s1"><a href="#" class="callbacks1_s1">1</a></li><li class="callbacks1_s2"><a href="#" class="callbacks1_s2">2</a></li><li class="callbacks1_s3"><a href="#" class="callbacks1_s3">3</a></li><li class="callbacks1_s4 callbacks_here"><a href="#" class="callbacks1_s4">4</a></li></ul>
-			</div>
-			<div class="clearfix"> </div>
-
-			<!--banner Slider starts Here-->
-		</div>
 		<!-- //Modal1 -->
+		<div class="container-fluid">
+            <div class="row">
+                <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                  <div uib-slide ng-repeat="slide in slides track by slide.id" class="slider-wrapper" index="slide.id">
+                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                    <div class="carousel-caption">
+                      <h4>Slide {{slide.id}}</h4>
+                      <p>{{slide.text}}</p>
+                      <div class="banner-info_agile_w3ls">
+                        <h3>Better Ingredients. <span> Better</span> Food.</h3>
+                        <p>Small change,Big differences.</p>
+                        <a href="#about" class="scroll">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                        <a href="#mail" class="scroll">Contact Us <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
