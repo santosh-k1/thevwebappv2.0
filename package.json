@@ -1,6 +1,6 @@
 {
-  "name": "thevwebappv3.0",
-  "version": "1.0.0",
+  "name": "thevwebappv2.0",
+  "version": "1.1.0",
   "description": "webapp application",
   "scripts": {
     "prestart": "npm install",

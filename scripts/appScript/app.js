@@ -1,5 +1,5 @@
-define(['angularAMD', 'angular-route','jquery','bootstrap','ui-bootstrap-tpls','angular-animate','angular-sanitize'], function (angularAMD) {
-    var app = angular.module("webapp", ['ngRoute','ui.bootstrap','ngAnimate', 'ngSanitize']);
+define(['angularAMD', 'angular-route','jquery','bootstrap','ui-bootstrap-tpls','angular-animate','angular-sanitize','ng-image-gallery'], function (angularAMD) {
+    var app = angular.module("webapp", ['ngRoute','ui.bootstrap','ngAnimate', 'ngSanitize','thatisuday.ng-image-gallery']);
     app.config(function ($routeProvider) {
       $routeProvider
       .when("/", angularAMD.route({
