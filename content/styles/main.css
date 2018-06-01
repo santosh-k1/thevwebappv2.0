@@ -3007,3 +3007,10 @@ background: #428bca;
 	position: absolute;
 	z-index: 1;}
 
+/*Added by santoshk for product slider*/
+.col-item{background: #eee; padding: 0.5em; box-sizing: border-box}
+#productSlider{margin: 1em 0}
+.product-details-wrapper{position: relative}
+.product-name{display: block; padding: var(--padding); text-align: center; position: relative}
+.product-content{position: absolute; bottom: 2.5em; padding: var(--padding); margin: var(--margin); background:var(--light); box-shadow: var(--shadow) }
+.product-list{float: left;overflow: hidden;}
